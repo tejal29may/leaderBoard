@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url("https://images.pexels.com/photos/990432/pexels-photo-990432.jpeg?auto=compress&cs=tinysrgb&w=600"); */
+    background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+cursor: pointer;
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+.board{
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    margin: 4% auto;
+    margin-left: 20%;
+    
+    
+}
+.upper{
+    display: flex;
+    gap: 10px;
+}
+input{
+    width: 170px;
+    height: 42px;
+    border: 3px solid green;
+    border-radius: 6px;
+}
+#add{
+    width: 150px;
+    height: 40px;
+    background-color: cadetblue;
+    border: 3px solid green;
+    border-radius: 6px;
+    cursor: pointer;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+}
+.main_div{
+    width: 870px;
+    height: 80px;
+    border: 3px solid rgb(47, 47, 225);
+    display: flex;
+    border-radius: 6px;
+    margin-bottom: 2%;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+   
+}
+.lower{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.add_btn,.sub_btn{
+    background-color:#5271C4;
+    width: 70px;
+   
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    
+   
+
+   
+}
+.name,.country,.score{
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    width: 160px;
+}
+
+h2{
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    color:#b721ff ;
+}
