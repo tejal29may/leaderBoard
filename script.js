@@ -2,7 +2,17 @@
 let addButton=document.getElementById("add");
 let playerList=document.getElementById("player-list");
 
-const list=[];
+const list=[{
+    name:"Tejal Mohod",
+    country:"India",
+    score:80,
+
+},
+{
+name:"harshada",
+country:"canada",
+score:90,
+}]
 
 addButton.addEventListener("click",(e)=>{
     console.log("okk");
@@ -70,9 +80,9 @@ addButton.addEventListener("click",(e)=>{
         minus.setAttribute("onclick", `minusfuction(${i})`);
         
        
-        addition.innerText = "➕ 5";
+        addition.innerText = "➕5";
         minus.innerText = "➖ 5";
-        deletebtn.innerText="❌";
+        deletebtn.innerHTML="✖"
 
         div.classList.add("main_div");
         // playerList.append(div);
@@ -86,7 +96,7 @@ addButton.addEventListener("click",(e)=>{
     items.addEventListener('click',()=>{
     items.parentNode.remove();
     arr.splice(index,1);
-    console.log('saf');
+   
     })
 })
       
@@ -157,7 +167,8 @@ function updatefuction() {
         
         addition.innerText = "➕ 5";
         minus.innerText = "➖ 5";
-        deletebtn.innerHTML = "❌";
+        deletebtn.innerText="✖";
+        
 
         div.classList.add("main_div");
         // playerList.append(div);
@@ -199,3 +210,5 @@ function addfuction(i) {
     list[i].score -= 5;
     updatefuction();
   }
+
+  window.onload=()=>updatefuction();
