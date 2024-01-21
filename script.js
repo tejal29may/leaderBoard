@@ -9,7 +9,7 @@ const list=[{
 
 },
 {
-name:"harshada",
+name:"purvi",
 country:"canada",
 score:90,
 }]
@@ -92,10 +92,12 @@ addButton.addEventListener("click",(e)=>{
      
 
     let allbtns = document.querySelectorAll('.deletbtn')
-    allbtns.forEach((items,index)=>{
+    allbtns.forEach((items,i)=>{
     items.addEventListener('click',()=>{
     items.parentNode.remove();
-    arr.splice(index,1);
+    list.splice(i,1);
+  
+    // arr.splice(index,1);
    
     })
 })
@@ -167,7 +169,7 @@ function updatefuction() {
         
         addition.innerText = "➕ 5";
         minus.innerText = "➖ 5";
-        deletebtn.innerText="✖";
+        deletebtn.innerText="❌";
         
 
         div.classList.add("main_div");
@@ -178,10 +180,11 @@ function updatefuction() {
       
 
     let allbtns = document.querySelectorAll('.deletbtn')
-    allbtns.forEach((items,index)=>{
+    allbtns.forEach((items,i)=>{
     items.addEventListener('click',()=>{
     items.parentNode.remove();
-    arr.splice(index,1);
+   
+    list.splice(i,1);
     console.log('saf');
     })
 })

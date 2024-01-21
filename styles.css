@@ -22,12 +22,14 @@ cursor: pointer;
     flex-direction: column;
     margin: 4% auto;
     margin-left: 20%;
+    flex-wrap: wrap;
     
     
 }
 .upper{
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 input{
     width: 170px;
@@ -49,6 +51,7 @@ input{
     height: 80px;
     border: 3px solid rgb(47, 47, 225);
     display: flex;
+    flex-wrap: wrap;
     border-radius: 6px;
     margin-bottom: 2%;
     /* justify-content: center; */
@@ -101,4 +104,45 @@ h2{
     color: #b721ff;
     font-size: 25px;
     font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width:425px) {
+    .board{
+        width: 300px;
+        margin-left: 10%;
+
+    }
+    .upper{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        width: 250px;
+    }
+    #add{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+    }
+    .lower{
+        display: flex;
+        flex-direction: column;
+        /* max-width: 300px; */
+    }
+    .main_div{
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -5%;
+    }
+    .name,.country,.score{
+        text-align: center;
+    }
 }
